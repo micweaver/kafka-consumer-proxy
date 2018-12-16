@@ -1,0 +1,28 @@
+<?php
+/*
+* @desc 
+* @author lizhonghua@dongqiudi.com
+* @2017年8月21日
+*/
+
+return [
+    'host' => '127.0.0.1', //ip或域名
+    'port' => '80', //端口
+    'url' => '/inner/mqdemo/test', //请求url
+    'concurrency' => 3,//接口访问并发数
+    'can_skip' => false, //消息送达出错时能否跳过，不能跳过会一直重试（也可通过控制脚本手动跳过）
+    'retry_nums' => 3,  //能跳过时出错重试次数
+    'retry_interval_ms' => 2000, // 重试间隔
+    'conn_timeout_ms' => 10000, // 连接超时
+    'exec_timeout_ms' => 60000, //执行超时
+    'domain' => 'api.dqd.com', //域名
+    'use_saved_offset_time' => 0, //offset判断不对时，重置offset时间间隔
+    'slow_time_ms' => 1000, //慢请求阈值
+    'consumer_conf' => [], //消费者进程相关配置
+    'consumer_topic_conf' => [], //消费者进程相关配置
+   // 'consumer_topic_conf' => ['auto.offset.reset' => 'smallest'], //从最老消息开始消费使用该配置
+   // 'async_concurrency' => 3,//消息发送异步并发数，提高消息转发速度，不确保消息发送一定成功
+   // 'cluster' => '',  //集群配置
+  // 'message_delivery_guarantees' => 2,  // 1 At most once  2 At least once  3 Exactly once
+    
+];
