@@ -1,6 +1,10 @@
 # kafka-consumer-proxy
 kafka消费者代理
+## 详细见绍
+见 https://blog.csdn.net/MICweaver/article/details/85041252
 
+## 整体架构
+![架构图](https://img-blog.csdnimg.cn/20181216214954189.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01JQ3dlYXZlcg==,size_16,color_FFFFFF,t_70)
 ## 示例配置
 当一个业务需要处理消息时，首先要准备一个消费消息的http接口，然后提供proxy 的配置文件，最后启动相应消费者进程组即可， proxy会自动转发消息。 proxy配置是一个php文件，如下所示：
  
