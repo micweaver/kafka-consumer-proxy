@@ -1,6 +1,6 @@
 # kafka-consumer-proxy
 kafka消费者代理
-## 详细见绍
+## 详细介绍
 见 https://blog.csdn.net/MICweaver/article/details/85041252
 
 ## 整体架构
