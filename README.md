@@ -38,8 +38,7 @@ use_saved_offset_time|	0|	必选|	kafka服务在出现offset问题时需要重�
 slow_time_ms|	0|	可选|	慢请求阈值，当转发耗时超过该值则会打印相应消息日志|
 domain	|‘api.dqd.com’|可选|	http请求 header host字段|
 consumer_conf|[]|	可选|	kafka配置，参见：https://github.com/edenhill/librdkafka/blob/master/CONFIGURATION.md|
-consumer_topic_conf|	['auto.offset.reset' => 'smallest']|	可选	|kafka配置，参见：https://github.com/edenhill/librdkafka/blob/master/CONFIGURATION.md
-|
+consumer_topic_conf|	['auto.offset.reset' => 'smallest']|	可选	|kafka配置，参见：https://github.com/edenhill/librdkafka/blob/master/CONFIGURATION.md|
 async_concurrency|	3|	可选|	同一个消费进程的处理并发数，不保证消息顺序与消息一定投递成功|
 cluster|	‘kafka_dqd’|	可选|	集群配置，当有多个kafka集群时，可以进行切换|
 message_delivery_guarantees|	2|	可选|	消息投递保证, 可能值为1、2、3 ，见下文解释|
